@@ -1,17 +1,21 @@
-from lib2to3.pgen2 import token
-# from matplotlib import image
-# from sklearn import feature_selection
+
+
 import streamlit as st
-# from tkinter.messagebox import NO
+import pandas as pd
+
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+
+import polar_plot
+import song_recomandation
+
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id="93904d674b094e5095c70810366f6410",
                                                            client_secret="11d75b7e2b384b53a7d02f283fa68238"))
-import pandas as pd
-import polar_plot
+
+
 C_ID = '93904d674b094e5095c70810366f6410'
 C_SCR = '11d75b7e2b384b53a7d02f283fa68238'
-import song_recomandation
+
 
 st.header('Spotify App (streamlit)')
 # st.sidebar.write('sideba')
