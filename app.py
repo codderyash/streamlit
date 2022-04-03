@@ -1,5 +1,5 @@
 from lib2to3.pgen2 import token
-from matplotlib import image
+# from matplotlib import image
 from sklearn import feature_selection
 import streamlit as st
 from tkinter.messagebox import NO
